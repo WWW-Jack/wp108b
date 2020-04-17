@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  font-size: 16px;
+  margin: 0px;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+}
+button {
+  padding: 10px;
+  background-color: lightblue;
+  border: 1px solid lightblue;
+}
+input {
+  padding: 6px;
+  font-size: 16px;
+}
+
+input, textarea, button {
+  border-radius: 5px;
+}
+
+.main {
+    margin: 20px;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="main">
+      <form>
+        <fieldset>
+        <legend>google帳戶</legend></br>
+        <label for="username">帳號:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">密碼:</label><br>
+        <input type="password" id="pwd" name="pwd">
+
+        <br/><br/>
+      
+        <p>你會選擇哪一個品牌的綠茶</p></br>
+
+        <input type="checkbox" name="subscribe" value="subscribe">
+        <label>原萃</label>
+        <input type="checkbox" name="subscribe" value="subscribe">
+        <label>茶裏王</label>
+        <input type="checkbox" name="subscribe" value="subscribe">
+        <label>純喫茶</label>
+        <input type="checkbox" name="subscribe" value="subscribe">
+        <label>義美綠茶</label>
+        <input type="checkbox" name="subscribe" value="subscribe">
+        <label>御茶園</label>
+        <input type="checkbox" name="subscribe" value="subscribe">
+        <label>伊藤園</label>
+      
+        <br/><br/>
+
+        <button>送出</button>
+
+        <br/><br/>
+        
+        <p>(表單已送出)</p>
+        </fieldset>
+      </form>      
+</div>
+</body>
+</html>
