@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>個人夜市口袋名單</title>
+
+        <style>
+            body {
+                background-color:lightblue;
+            }
+            h1 {
+                position:absolute; left:600px; top:20px;
+                font-size:80px;
+                color:royalblue;
+            }
+            .home {
+                height:100%;
+                width:0;
+                position:fixed;
+                left:0;
+                top:0;
+                z-index:1;
+                background-color:royalblue;
+                overflow-x:hidden;
+                transition:0.5s;
+                padding-top:60px;
+            }
+
+            .home a {
+                padding:8px 8px 8px 32px;
+                text-decoration:none;
+                font-size:25px;
+                color:white;
+                display:block;
+                transition:0.3s;
+            }
+            
+            .home a:hover {
+                color:white;
+            }
+
+            .home .closebtn {
+                position:absolute;
+                top:0;
+                right:25px;
+                font-size:36px;
+                margin-left:50px;
+            }
+            span {
+                background-color:royalblue;
+                color:white;
+                position:absolute;
+                left:480px;
+                top:-60px;
+                padding:9px;
+                margin:60px;
+            }
+            button {
+                width:100px;
+                height:50px;
+                border:none;
+                color:white;
+                background-color:royalblue;
+            }
+            .menu {
+                background-color:royalblue;
+                color:white;
+                padding:10px; 
+                width:100px;
+                list-style-type:none;
+            }
+            img {
+                position:absolute; left:60px; top:200px;
+                width:1000px;
+            }
+            @media (max-width: 1000px) {
+                img {
+                    width:500px;
+                }
+                h1 {
+                    font-size:50px;
+                    position:absolute;
+                    left:300px;
+                    top:80px;
+                }
+            }
+            @media (max-width: 500px) {
+                img {
+                    width:250px;
+                }
+                h1 {
+                    font-size:25px;
+                    position:absolute;
+                    left:170px;
+                    top:90px;
+                }
+            }
+        </style>
+
+        <script>
+            function openNav()
+            {
+                document.getElementById("homes").style.width = "250px";
+            }
+
+            function closeNav()
+            {
+                document.getElementById("homes").style.width = "0";
+            }
+            function function1()
+            {
+                document.getElementById("demo").innerText = "黃金右腿"
+            }
+            function function2()
+            {
+                document.getElementById("demo").innerText = "燒烤杏鮑菇"
+            }
+            function function3()
+            {
+                document.getElementById("demo").innerText = "蛋黃芋餅 香酥芋丸"
+            }
+            function function4()
+            {
+                document.getElementById("demo").innerText = "麻辣鴨血 麻辣魚蛋"
+            }
+            function function5()
+            {
+                document.getElementById("demo").innerText = "爆漿芋"
+            }
+            function function6()
+            {
+                document.getElementById("demo").innerText = "阿爸的芋圓"
+            }
+            function show(id)
+            {
+              document.getElementById(id).style.visibility='visible';
+            }  
+            function hide(id)
+            {
+              document.getElementById(id).style.visibility='hidden';
+            }
+        </script>
+
+    </head>
+    <body onload = "hide('food1'); hide('food2'); hide('food3'); hide('food4'); hide('food5'); hide('food6');">
+        <main>
+            <h1>個人夜市口袋名單</h1>
+            <div id="homes" class="home">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="https://stellachen524.pixnet.net/blog/post/372574796">逢甲夜市更多</a>
+                <a href="https://cheer198.pixnet.net/blog/post/35335471">士林夜市更多</a>
+                <a href="https://duck303088.pixnet.net/blog/post/467479757">寧夏夜市更多</a>
+                <a href="https://mei30530.pixnet.net/blog/post/259277222">花園夜市更多</a>
+                <a href="https://zineblog.com.tw/blog/post/47029588">饒河夜市更多</a>
+                <a href="http://chumimeow.pixnet.net/blog/post/215259765">樂華夜市更多</a>
+            </div>
+            <span style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776; 更多</span>
+            <aside>
+                <ul onmouseover="show('food1')"  onmouseout="hide('food1')" style="position:absolute; left:560px; top:-16px">
+                    <li class = "menu">台中逢甲夜市</li>
+                    <ul id="food1" class="menu">
+                        <li><button onclick="document.getElementById('Image').src='DSC02195.jpg'">TOP1</button></li>
+                        <li><button onclick="function1()">Ans</button></li>
+                    </ul>
+                </ul>
+                <ul onmouseover="show('food2')"  onmouseout="hide('food2')" style="position:absolute; left:680px; top:-16px">
+                    <li class="menu">台北士林夜市</li>
+                    <ul id="food2" class="menu">
+                        <li><button onclick="document.getElementById('Image').src='27469733079_371c908750_c.jpg'">TOP1</button></li>
+                        <li><button onclick="function2()">Ans</button></li>
+                    </ul>
+                </ul>
+                <ul onmouseover="show('food3')"  onmouseout="hide('food3')" style="position:absolute; left:800px; top:-16px">
+                    <li class="menu">台北寧夏夜市</li>
+                    <ul id="food3" class="menu">
+                        <li><button onclick="document.getElementById('Image').src='4._img_708_h.jpg'">TOP1</button></li>
+                        <li><button onclick="function3()">Ans</button></li>
+                    </ul>
+                </ul>
+                <ul onmouseover="show('food4')"  onmouseout="hide('food4')" style="position:absolute; left:920px; top:-16px">
+                    <li class="menu">台南花園夜市</li>
+                    <ul id="food4" class="menu">
+                        <li><button onclick="document.getElementById('Image').src='a8c17155faa34c9866234d59624367d3.jpg'">TOP1</button></li>
+                        <li><button onclick="function4()">Ans</button></li>
+                    </ul>
+                </ul>
+                <ul onmouseover="show('food5')"  onmouseout="hide('food5')" style="position:absolute; left:1040px; top:-16px">
+                    <li class="menu">台北饒河夜市</li>
+                    <ul id="food5" class="menu">
+                        <li><button onclick="document.getElementById('Image').src='14422109942_972955231b_o.jpg'">TOP1</button></li>
+                        <li><button onclick="function5()">Ans</button></li>
+                    </ul>
+                </ul>
+                <ul onmouseover="show('food6')"  onmouseout="hide('food6')" style="position:absolute; left:1160px; top:-16px">
+                    <li class="menu">新北樂華夜市</li>
+                    <ul id="food6" class="menu">
+                        <li><button onclick="document.getElementById('Image').src='unnamed.jpg'">TOP1</button></li>
+                        <li><button onclick="function6()">Ans</button></li>
+                    </ul>
+                </ul>
+            </aside>
+            <img id="Image" src="">
+            <p id="demo" style="position:absolute; left:1420px; top:500px"></p>
+        </main>
+    </body>
+</html>
