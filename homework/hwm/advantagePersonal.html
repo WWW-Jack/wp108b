@@ -17,16 +17,14 @@
             .home {
                 height:100%;
                 width:0;
-                position:fixed;
+                position:absolute;
                 left:0;
                 top:0;
-                z-index:1;
                 background-color:royalblue;
                 overflow-x:hidden;
                 transition:0.5s;
                 padding-top:60px;
             }
-
             .home a {
                 padding:8px 8px 8px 32px;
                 text-decoration:none;
@@ -35,11 +33,6 @@
                 display:block;
                 transition:0.3s;
             }
-            
-            .home a:hover {
-                color:white;
-            }
-
             .home .closebtn {
                 position:absolute;
                 top:0;
@@ -98,7 +91,7 @@
             }
         </style>
 
-        <script>
+        <script>                                                                                                             
             function openNav()
             {
                 document.getElementById("homes").style.width = "250px";
@@ -143,7 +136,18 @@
         </script>
 
     </head>
-    <body onload = "hide('food1'); hide('food2'); hide('food3'); hide('food4'); hide('food5'); hide('food6');">
+    <body onload = "hide('food1'); hide('food2'); hide('food3'); hide('food4'); hide('food5'); hide('food6');">         <!--div和span的內容是側欄的程式碼，
+                                                                                                                            aside的內容是功能表的程式碼，
+                                                                                                                            側欄跟功能表的隱藏跟顯示，還有文字的顯示全都用javascript
+                                                                                                                            的函式呼叫，圖片的顯示則是用document.getElementById('Image')
+                                                                                                                            取得圖片的值後直接顯示圖片，
+                                                                                                                            支援手機檢視的部分用<meta name="viewport" content="width=device-width,
+                                                                                                                            initial-scale=1">這一行，
+                                                                                                                            但由於一些元素是用style="position:absolute;來寫，
+                                                                                                                            所以在CSS加上@media來處理圖片變大變小後的位置，
+                                                                                                                            CSS側欄裡的overflow-x:hidden和javascript的
+                                                                                                                            document.getElementById("homes").style.width = "250px"
+                                                                                                                            一起使用讓沒呼叫側欄時側欄隱藏-->
         <main>
             <h1>個人夜市口袋名單</h1>
             <div id="homes" class="home">
