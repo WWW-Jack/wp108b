@@ -10,14 +10,14 @@
                 background-color:lightblue;
             }
             h1 {
-                position:absolute; left:600px; top:20px;
+                position:fixed; left:600px; top:20px;
                 font-size:80px;
                 color:royalblue;
             }
             .home {
                 height:100%;
                 width:0;
-                position:absolute;
+                position:fixed;
                 left:0;
                 top:0;
                 background-color:royalblue;
@@ -43,7 +43,7 @@
             span {
                 background-color:royalblue;
                 color:white;
-                position:absolute;
+                position:fixed;
                 left:480px;
                 top:-60px;
                 padding:9px;
@@ -64,7 +64,7 @@
                 list-style-type:none;
             }
             img {
-                position:absolute; left:60px; top:200px;
+                position:fixed; left:60px; top:200px;
                 width:1000px;
             }
             @media (max-width: 1000px) {
@@ -73,7 +73,7 @@
                 }
                 h1 {
                     font-size:50px;
-                    position:absolute;
+                    position:fixed;
                     left:300px;
                     top:80px;
                 }
@@ -84,7 +84,7 @@
                 }
                 h1 {
                     font-size:25px;
-                    position:absolute;
+                    position:fixed;
                     left:170px;
                     top:90px;
                 }
@@ -144,7 +144,7 @@
             取得圖片的值後直接顯示圖片，
             支援手機檢視的部分用<meta name="viewport" content="width=device-width,
             initial-scale=1">這一行，
-            但由於一些元素是用style="position:absolute;來寫，
+            但由於一些元素是用style="position:absolute和fixed來寫，
             所以在CSS加上@media來處理圖片變大變小後的位置，
             CSS側欄裡的overflow-x:hidden和javascript的
             document.getElementById("homes").style.width = "250px"
@@ -162,42 +162,42 @@
             </div>
             <span style="font-size:15px" onclick="openNav()">&#9776; 更多</span>
             <aside>
-                <ul onmouseover="show('food1')"  onmouseout="hide('food1')" style="position:absolute; left:560px; top:-16px">
+                <ul onmouseover="show('food1')"  onmouseout="hide('food1')" style="position:fixed; left:560px; top:-16px">
                     <li class = "menu">台中逢甲夜市</li>
                     <ul id="food1" class="menu">
                         <li><button onclick="document.getElementById('Image').src='DSC02195.jpg'">TOP1</button></li>
                         <li><button onclick="function1()">Ans</button></li>
                     </ul>
                 </ul>
-                <ul onmouseover="show('food2')"  onmouseout="hide('food2')" style="position:absolute; left:680px; top:-16px">
+                <ul onmouseover="show('food2')"  onmouseout="hide('food2')" style="position:fixed; left:680px; top:-16px">
                     <li class="menu">台北士林夜市</li>
                     <ul id="food2" class="menu">
                         <li><button onclick="document.getElementById('Image').src='27469733079_371c908750_c.jpg'">TOP1</button></li>
                         <li><button onclick="function2()">Ans</button></li>
                     </ul>
                 </ul>
-                <ul onmouseover="show('food3')"  onmouseout="hide('food3')" style="position:absolute; left:800px; top:-16px">
+                <ul onmouseover="show('food3')"  onmouseout="hide('food3')" style="position:fixed; left:800px; top:-16px">
                     <li class="menu">台北寧夏夜市</li>
                     <ul id="food3" class="menu">
                         <li><button onclick="document.getElementById('Image').src='4._img_708_h.jpg'">TOP1</button></li>
                         <li><button onclick="function3()">Ans</button></li>
                     </ul>
                 </ul>
-                <ul onmouseover="show('food4')"  onmouseout="hide('food4')" style="position:absolute; left:920px; top:-16px">
+                <ul onmouseover="show('food4')"  onmouseout="hide('food4')" style="position:fixed; left:920px; top:-16px">
                     <li class="menu">台南花園夜市</li>
                     <ul id="food4" class="menu">
                         <li><button onclick="document.getElementById('Image').src='a8c17155faa34c9866234d59624367d3.jpg'">TOP1</button></li>
                         <li><button onclick="function4()">Ans</button></li>
                     </ul>
                 </ul>
-                <ul onmouseover="show('food5')"  onmouseout="hide('food5')" style="position:absolute; left:1040px; top:-16px">
+                <ul onmouseover="show('food5')"  onmouseout="hide('food5')" style="position:fixed; left:1040px; top:-16px">
                     <li class="menu">台北饒河夜市</li>
                     <ul id="food5" class="menu">
                         <li><button onclick="document.getElementById('Image').src='14422109942_972955231b_o.jpg'">TOP1</button></li>
                         <li><button onclick="function5()">Ans</button></li>
                     </ul>
                 </ul>
-                <ul onmouseover="show('food6')"  onmouseout="hide('food6')" style="position:absolute; left:1160px; top:-16px">
+                <ul onmouseover="show('food6')"  onmouseout="hide('food6')" style="position:fixed; left:1160px; top:-16px">
                     <li class="menu">新北樂華夜市</li>
                     <ul id="food6" class="menu">
                         <li><button onclick="document.getElementById('Image').src='unnamed.jpg'">TOP1</button></li>
@@ -206,7 +206,7 @@
                 </ul>
             </aside>
             <img id="Image" src="">
-            <p id="demo" style="position:absolute; left:1420px; top:500px"></p>
+            <p id="demo" style="position:fixed; left:1420px; top:500px"></p>
         </main>
     </body>
 </html>
