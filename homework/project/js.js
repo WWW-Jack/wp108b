@@ -23,10 +23,10 @@ function convertToWord(letter) {
     }
     if(letter === "p")
     {
-        oo.src = "images/paper.png"
+        oo.src = "images/paper.png";
         return "Paper";
     }
-    oo.src = "images/scissors.png"
+    oo.src = "images/scissors.png";
     return "Scissors";
 }
 
