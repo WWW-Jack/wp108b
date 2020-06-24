@@ -7,6 +7,7 @@ const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+const oo = document.getElementById("o");
 
 function getComputerChoice() {
     const choices = ['r', 'p', 's'];
@@ -15,8 +16,17 @@ function getComputerChoice() {
 }
 
 function convertToWord(letter) {
-    if(letter === "r") return "Rock";
-    if(letter === "p") return "Paper";
+    if(letter === "r")
+    {
+        oo.src = "images/rock.png";
+        return "Rock";
+    }
+    if(letter === "p")
+    {
+        oo.src = "images/paper.png"
+        return "Paper";
+    }
+    oo.src = "images/scissors.png"
     return "Scissors";
 }
 
